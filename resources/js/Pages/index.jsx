@@ -8,10 +8,10 @@ export default function index({ projects }){
             { projects.map(item => (
                 <Card key={ i++ }>
                     <a href={ item.link }>
-                        <CardTitle>{ item.title }</CardTitle>
+                        <CardTitle title= { item.title} />
                     </a>
                     <a href={ item.repository }>
-                        <CardLgLink>Portfolio</CardLgLink>
+                        <CardLgLink title="Portfolio" />
                     </a>
                 </Card>
             )) }
