@@ -27,7 +27,10 @@ return new class extends Migration
 
         Schema::create('stack', function(Blueprint $table){
             $table->id('id')->primary();
-            $table->bigInteger('id_project')->references('id')->on('projects');
+            $table->unsignedBigInteger('id_project');
+            $table->unsignedBigInteger('id_technology');
+
+            $table->foreign('id_project')->references('id')->on('projects');
             $table->foreign('id_technology')->references('id')->on('technologies');
         });
     }
