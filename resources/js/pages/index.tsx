@@ -1,5 +1,5 @@
-import { Layout } from '../layout.jsx'
-import { Cards, Card, CardTitle, CardLgLink } from '../components/Card.jsx'
+import { Layout } from '../layout'
+import { Cards, Card, CardTitle, CardLgLink } from '../components/Card'
 
 export default function index({ projects }){
     return(
